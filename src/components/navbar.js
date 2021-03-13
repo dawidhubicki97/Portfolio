@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { FaBars, Fatimes, FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
+import "../css/main.css"
 const Navbar = () => {
   const [click, setClick] = useState(false)
   const [scroll, setScroll] = useState(false)
@@ -22,10 +23,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png"
-            className="toggle-btn"
-          />
+          <h3>Dawid Hubicki</h3>
           <button type="button" className="toggle-btn">
             <FaAlignRight></FaAlignRight>
           </button>
