@@ -1,8 +1,10 @@
+import { graphql } from "gatsby"
 import React, { useState, useEffect } from "react"
 import { FaBars, Fatimes, FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
+import Img from "gatsby-image"
 import "../css/main.css"
-const Navbar = () => {
+const Navbar = homeImageData => {
   const [click, setClick] = useState(false)
   const [scroll, setScroll] = useState(false)
 
@@ -23,7 +25,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <h3>Dawid Hubicki</h3>
+          <h3>Portfolio</h3>
           <button type="button" className="toggle-btn">
             <FaAlignRight></FaAlignRight>
           </button>

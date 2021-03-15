@@ -1,35 +1,25 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { useState, useEffect } from "react"
 import Header from "./header"
+import Img from "gatsby-image"
 import "./layout.css"
 import Navbar from "./Navbar"
 import About from "./about"
 import Home from "./home"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Layout = (homeImageData, { children }) => {
   return (
     <>
       <div className="header">
         <Navbar></Navbar>
+        <Img
+          fluid={
+            homeImageData.homeImageData.backgroundImage.childImageSharp.fluid
+          }
+          alt=""
+        />
         <Home></Home>
       </div>
       <About></About>
