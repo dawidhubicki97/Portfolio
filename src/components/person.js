@@ -5,8 +5,8 @@ export default function Person() {
   return (
     <div class="person">
       <article>
-        <h1>Dawid Hubicki </h1>
-        <h4>Front-End Developer</h4>
+        <div className="person-title">Dawid Hubicki</div>
+        <div className="person-description">Front-End Developer</div>
         <SocialLinks></SocialLinks>
       </article>
     </div>

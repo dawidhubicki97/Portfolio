@@ -57,6 +57,7 @@ Navbar
     margin-right: 2rem;
   }
   .nav-links a {
+    text-decoration: none;
     text-transform: capitalize;
     color: var(--clr-grey-1);
     font-weight: bold;
@@ -96,4 +97,12 @@ Navbar
   width: 15rem;
   display: flex;
   justify-content: space-between;
+}
+.person-title {
+  font-weight: bold;
+  font-size: 46px;
+}
+.person-description {
+  font-weight: lighter;
+  font-size: 16px;
 }
