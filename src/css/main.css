@@ -86,23 +86,33 @@ Navbar
   height: 100vh;
   background-color: black;
 }
-.person {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  color: white;
-}
+
 .social-links {
   margin-top: 2rem;
   width: 15rem;
   display: flex;
   justify-content: space-between;
 }
-.person-title {
+.home {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  color: white;
+}
+.home-title {
   font-weight: bold;
   font-size: 46px;
 }
-.person-description {
+.home-description {
   font-weight: lighter;
   font-size: 16px;
+}
+.projects {
+  height: 100vh;
+}
+.about {
+  height: 100vh;
+}
+.contact {
+  height: 100vh;
 }

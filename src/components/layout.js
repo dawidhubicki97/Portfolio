@@ -25,7 +25,6 @@ const Layout = (homeImageData, { children }) => {
           }
           alt=""
         />
-        <Person></Person>
         <Home></Home>
       </div>
       <About></About>
