@@ -84,3 +84,14 @@ Navbar
   height: 100vh;
   background-color: blue;
 }
+.person {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.social-links {
+  margin-top: 2rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
