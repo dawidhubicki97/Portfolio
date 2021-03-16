@@ -9,6 +9,8 @@ import Navbar from "./Navbar"
 import About from "./about"
 import Home from "./home"
 import Person from "./person"
+import Projects from "./projects"
+import Contact from "./contact"
 
 const Layout = (homeImageData, { children }) => {
   return (
@@ -27,6 +29,8 @@ const Layout = (homeImageData, { children }) => {
         <Home></Home>
       </div>
       <About></About>
+      <Projects></Projects>
+      <Contact></Contact>
     </>
   )
 }
