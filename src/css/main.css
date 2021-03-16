@@ -78,16 +78,18 @@ Navbar
 @media screen and (min-width: 992px) {
   .navbar {
     background: transparent;
+    color: white;
   }
 }
 .header {
   height: 100vh;
-  background-color: blue;
+  background-color: black;
 }
 .person {
   position: absolute;
   top: 40%;
   left: 35%;
+  color: white;
 }
 .social-links {
   margin-top: 2rem;

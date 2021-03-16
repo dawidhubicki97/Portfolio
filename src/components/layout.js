@@ -19,7 +19,7 @@ const Layout = (homeImageData, { children }) => {
         <Navbar></Navbar>
         <Img
           style={{ height: "100%", width: "100vw" }}
-          imgStyle={{ objectFit: "fill" }}
+          imgStyle={{ objectFit: "fill", opacity: "0.3" }}
           fluid={
             homeImageData.homeImageData.backgroundImage.childImageSharp.fluid
           }
