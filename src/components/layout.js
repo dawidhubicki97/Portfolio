@@ -1,14 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { useState, useEffect } from "react"
-import Header from "./header"
+
 import Img from "gatsby-image"
 import "./layout.css"
 import Navbar from "./Navbar"
 import About from "./about"
 import Home from "./home"
-import Person from "./person"
 import Projects from "./projects"
 import Contact from "./contact"
 
