@@ -93,6 +93,9 @@ Navbar
   display: flex;
   justify-content: space-between;
 }
+.social-icon {
+  color: white;
+}
 .home {
   position: absolute;
   top: 40%;
