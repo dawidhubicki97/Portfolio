@@ -2,7 +2,7 @@ import React from "react"
 import SocialLinks from "../constants/socialLinks"
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <article>
         <div className="home-title">Dawid Hubicki</div>
         <div className="home-description">Front-End Developer</div>

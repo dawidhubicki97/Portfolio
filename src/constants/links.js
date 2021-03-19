@@ -5,17 +5,17 @@ const data = [
   {
     id: 1,
     text: "home",
-    url: "#",
+    url: "#home",
   },
   {
     id: 2,
     text: "o mnie",
-    url: "#",
+    url: "#about",
   },
   {
     id: 3,
     text: "projekty",
-    url: "#",
+    url: "#projects",
   },
 ]
 

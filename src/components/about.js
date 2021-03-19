@@ -3,7 +3,7 @@ import { FaCode, FaGraduationCap, FaAndroid } from "react-icons/fa"
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h1>O mnie</h1>
       <div className="about-underline"></div>
       <div className="about-container">

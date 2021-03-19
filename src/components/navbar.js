@@ -11,8 +11,10 @@ const Navbar = homeImageData => {
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScroll(true)
+      console.log(window.scrollY)
     } else {
       setScroll(false)
+      console.log(window.scrollY)
     }
   }
 
@@ -20,9 +22,9 @@ const Navbar = homeImageData => {
     changeNav()
     window.addEventListener("scroll", changeNav)
   }, [])
-
+  window.addEventListener("scroll", changeNav)
   return (
-    <nav className="navbar">
+    <nav className={scroll ? "navbar active" : "navbar"}>
       <div className="nav-center">
         <div className="nav-header">
           <h3>Portfolio</h3>

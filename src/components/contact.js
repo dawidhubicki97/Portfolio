@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa"
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-info">
         <div className="contact-phoneinfo">
           <FaPhone></FaPhone>111222333
