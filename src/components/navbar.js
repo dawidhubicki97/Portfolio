@@ -4,6 +4,7 @@ import { FaBars, Fatimes, FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import Img from "gatsby-image"
 import "../css/main.css"
+
 const Navbar = homeImageData => {
   const [click, setClick] = useState(false)
   const [scroll, setScroll] = useState(false)
@@ -22,7 +23,7 @@ const Navbar = homeImageData => {
     changeNav()
     window.addEventListener("scroll", changeNav)
   }, [])
-  window.addEventListener("scroll", changeNav)
+
   return (
     <nav className={scroll ? "navbar active" : "navbar"}>
       <div className="nav-center">
