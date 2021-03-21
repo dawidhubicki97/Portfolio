@@ -55,7 +55,6 @@ export default function Projects() {
           </ul>
         </div>
       </div>
-
       <div class="card-container">
         <span class="pro">PROJECT</span>
         <img
