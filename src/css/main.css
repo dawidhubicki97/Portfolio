@@ -85,6 +85,11 @@ Navbar
     color: white;
   }
 }
+/*
+=============== 
+Home
+===============
+*/
 .header {
   height: 100vh;
   background-color: black;
@@ -99,6 +104,7 @@ Navbar
 .social-icon {
   color: white;
 }
+
 .home {
   position: absolute;
   top: 40%;
@@ -113,9 +119,21 @@ Navbar
   font-weight: lighter;
   font-size: 16px;
 }
+/*
+=============== 
+Projects
+===============
+*/
 .projects {
+  background-color: #f3efdf;
   height: 100vh;
 }
+
+/*
+=============== 
+About
+===============
+*/
 .about {
   background-color: #e1dfdf;
   height: 100vh;
@@ -135,14 +153,6 @@ Navbar
   padding: 5px;
   text-align: center;
 }
-.contact {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100vh;
-  background-color: #e1dfdf;
-  padding: 10px;
-}
 .about-underline {
   width: 5rem;
   height: 0.25rem;
@@ -150,6 +160,19 @@ Navbar
   background: #bfbb6b;
   margin-left: auto;
   margin-right: auto;
+}
+/*
+=============== 
+Contact
+===============
+*/
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: #e1dfdf;
+  padding: 10px;
 }
 .contact-form {
   width: 80%;
@@ -235,4 +258,82 @@ Navbar
 }
 .share-button p:nth-of-type(4) {
   transition-delay: 0.4s;
+}
+
+/*
+=============== 
+Projects
+===============
+*/
+
+.projects {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-container {
+  background-color: #b34700;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: #b34700;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #02899c;
+}
+
+.card-skills {
+  background-color: #993d00;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.card-skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
 }
