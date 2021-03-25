@@ -24,5 +24,12 @@ export const query = graphql`
         }
       }
     }
+    firstProjectImage: file(relativePath: { eq: "projektonepc.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `

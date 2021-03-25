@@ -25,7 +25,7 @@ const Layout = (homeImageData, { children }) => {
         <Home></Home>
       </div>
       <About></About>
-      <Projects></Projects>
+      <Projects homeImageData={homeImageData}></Projects>
       <Contact></Contact>
     </>
   )

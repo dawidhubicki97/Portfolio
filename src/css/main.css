@@ -141,86 +141,57 @@ Projects
 ===============
 */
 .projects {
-  background-color: var(--fifth);
+  background-color: var(--secondary);
   height: 100vh;
 }
 .projects {
-  height: 110vh;
-  padding: 10px;
-  text-align: center;
+  height: 100vh;
+  padding: 20px;
 }
-.projects-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
+.projects-description {
+  font-family: "Karla", sans-serif;
+  max-width: 300px;
 }
-.card-container {
-  background-color: var(--sixth);
-  border-radius: 5px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-  color: var(--fourth);
-  padding-top: 30px;
+.projects-images {
   position: relative;
-  width: 350px;
-  max-width: 100%;
-  text-align: center;
 }
-
-.card-container .pro {
-  color: var(--primary);
-  background-color: var(--fourth);
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 7px;
+.projects-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.projects-button {
+  border-radius: 100px;
+  box-shadow: 0 4px 12px -2px rgb(0 0 0 /40%);
+  background-color: rgb(46, 80, 129);
+  opacity: 1;
+  outline: 0;
+  border-style: none;
+  transform: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+}
+.projects-background {
+  inset: -3% 20%;
   position: absolute;
-  top: 30px;
-  left: 30px;
+  background-color: rgb(46, 80, 129);
+  opacity: 0.2;
+  transform: none;
 }
-
-.card-container .round {
-  border: 1px solid var(--fourth);
-  border-radius: 50%;
-  padding: 7px;
+.projects-github {
+  background-color: #8e8f8e;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: space(1);
+  padding: space(1);
+  border-radius: 100px;
+  height: rem(40px);
+  width: rem(40px);
+  transform: translateY(3px);
+  box-shadow: 0px 4px 12px -2px;
 }
-
-button.primary {
-  background-color: var(--fourth);
-  border: 1px solid var(--fourth);
-  border-radius: 3px;
-  color: #231e39;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 10px 25px;
-}
-
-button.primary.ghost {
-  background-color: transparent;
-  color: var(--fourth);
-}
-
-.card-skills {
-  background-color: var(--seventh);
-  text-align: left;
-  padding: 15px;
-  margin-top: 30px;
-}
-
-.card-skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-skills ul li {
-  border: 1px solid #2d2747;
-  border-radius: 2px;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0 7px 7px 0;
-  padding: 7px;
-}
-
 /*
 =============== 
 About
@@ -296,7 +267,8 @@ Contact
   transition: all 0.3s;
 }
 .share-button {
-  widith: 280px;
+  border-style: none;
+  width: 280px;
   height: 80px;
   background: var(--third);
   border-radius: 40px;
@@ -354,3 +326,77 @@ Contact
 .share-button p:nth-of-type(4) {
   transition-delay: 0.4s;
 }
+
+/*
+.projects-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.card-container {
+  background-color: var(--sixth);
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: var(--fourth);
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: var(--primary);
+  background-color: var(--fourth);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid var(--fourth);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: var(--fourth);
+  border: 1px solid var(--fourth);
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: var(--fourth);
+}
+
+.card-skills {
+  background-color: var(--seventh);
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.card-skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+*/
