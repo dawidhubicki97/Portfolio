@@ -1,3 +1,13 @@
+:root {
+  --primary: black;
+  --secondary: white;
+  --third: #61892f;
+  --fourth: #86c232;
+  --fifth: #222629;
+  --sixth: #474b4f;
+  --seventh: #6b6e70;
+}
+
 ul {
   list-style-type: none;
 }
@@ -19,7 +29,6 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-white);
 }
 .nav-center {
   width: 90vw;
@@ -27,6 +36,7 @@ Navbar
   margin: 0 auto;
 }
 .nav-header {
+  color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +59,8 @@ Navbar
   display: none;
 }
 .nav-link {
+  font-weight: bold;
+  color: var(--primary);
   padding-bottom: 8px;
   position: relative;
 }
@@ -59,7 +71,7 @@ Navbar
   position: absolute;
   width: 0%;
   height: 3px;
-  background-color: rgb(102, 104, 8);
+  background-color: var(--third);
   transition: width 0.4s ease-out;
 }
 .nav-link:hover.nav-link::after {
@@ -97,7 +109,6 @@ Home
 */
 .header {
   height: 100vh;
-  background-color: black;
 }
 
 .social-links {
@@ -107,14 +118,14 @@ Home
   justify-content: space-between;
 }
 .social-icon {
-  color: white;
+  color: var(--third);
 }
 
 .home {
   position: absolute;
   top: 40%;
   left: 35%;
-  color: white;
+  color: var(--primary);
 }
 .home-title {
   font-weight: bold;
@@ -130,8 +141,84 @@ Projects
 ===============
 */
 .projects {
-  background-color: #f3efdf;
+  background-color: var(--fifth);
   height: 100vh;
+}
+.projects {
+  height: 110vh;
+  padding: 10px;
+  text-align: center;
+}
+.projects-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.card-container {
+  background-color: var(--sixth);
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: var(--fourth);
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: var(--primary);
+  background-color: var(--fourth);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid var(--fourth);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: var(--fourth);
+  border: 1px solid var(--fourth);
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: var(--fourth);
+}
+
+.card-skills {
+  background-color: var(--seventh);
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.card-skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
 }
 
 /*
@@ -140,9 +227,12 @@ About
 ===============
 */
 .about {
-  background-color: #e1dfdf;
+  background-color: var(--fifth);
   height: 100vh;
   text-align: center;
+}
+.about > h1 {
+  color: var(--primary);
 }
 .about-container {
   display: flex;
@@ -151,7 +241,7 @@ About
   height: 80%;
 }
 .about-box {
-  background-color: #f3f3f3;
+  background-color: var(--sixth);
   height: 80%;
   width: 25%;
   border-radius: 2%;
@@ -162,7 +252,7 @@ About
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: #bfbb6b;
+  background: var(--third);
   margin-left: auto;
   margin-right: auto;
 }
@@ -176,7 +266,7 @@ Contact
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-color: #e1dfdf;
+  background-color: var(--fifth);
   padding: 10px;
 }
 .contact-form {
@@ -198,7 +288,7 @@ Contact
   margin: 0 auto;
   padding: 0.5rem 2rem;
   border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--secondary);
   border: none;
   width: 30%;
   display: block;
@@ -208,7 +298,7 @@ Contact
 .share-button {
   widith: 280px;
   height: 80px;
-  background: #dfe6e9;
+  background: var(--third);
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -226,8 +316,8 @@ Contact
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #2d3436;
-  color: #f1f1f1;
+  background: var(--third);
+  color: var(--primary);
   text-align: center;
   line-height: 80px;
   z-index: 999;
@@ -242,7 +332,7 @@ Contact
   flex: 1;
   font-size: 26px;
   margin-right: 20px;
-  color: #2d3436;
+  color: var(--primary);
   text-align: center;
   transform: translateX(-100%);
   opacity: 0;
@@ -263,87 +353,4 @@ Contact
 }
 .share-button p:nth-of-type(4) {
   transition-delay: 0.4s;
-}
-
-/*
-=============== 
-Projects
-===============
-*/
-
-.projects {
-  height: 110vh;
-  padding: 10px;
-  text-align: center;
-}
-.projects-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-.card-container {
-  background-color: #b34700;
-  border-radius: 5px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-  color: #b3b8cd;
-  padding-top: 30px;
-  position: relative;
-  width: 350px;
-  max-width: 100%;
-  text-align: center;
-}
-
-.card-container .pro {
-  color: #b34700;
-  background-color: #febb0b;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 7px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
-.card-container .round {
-  border: 1px solid #03bfcb;
-  border-radius: 50%;
-  padding: 7px;
-}
-
-button.primary {
-  background-color: #03bfcb;
-  border: 1px solid #03bfcb;
-  border-radius: 3px;
-  color: #231e39;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 10px 25px;
-}
-
-button.primary.ghost {
-  background-color: transparent;
-  color: #02899c;
-}
-
-.card-skills {
-  background-color: #993d00;
-  text-align: left;
-  padding: 15px;
-  margin-top: 30px;
-}
-
-.card-skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-skills ul li {
-  border: 1px solid #2d2747;
-  border-radius: 2px;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0 7px 7px 0;
-  padding: 7px;
 }

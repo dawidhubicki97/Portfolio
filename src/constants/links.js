@@ -27,7 +27,7 @@ const data = [
 
 const tempLinks = data.map(link => {
   return (
-    <li class="nav-link" onClick={() => scrollTo(link.url)} key={link.id}>
+    <li className="nav-link" onClick={() => scrollTo(link.url)} key={link.id}>
       {link.text}
     </li>
   )

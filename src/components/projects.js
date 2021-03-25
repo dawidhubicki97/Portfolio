@@ -1,7 +1,21 @@
 import React from "react"
-
 export default function Projects() {
   return (
+    <div className="projects" id="projects">
+      <div
+        data-sal="slide-up"
+        data-sal-duration="2000"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
+        asdsadsafdsfgfs gdgfdgsfg dgdfgsfgfdsg sfgsfgsdfgdsfg sgsdfgdfgsdfgsdfg
+        sgsdfgdfgsdfgsdfgdsfgsdfgsdfg
+      </div>
+    </div>
+  )
+}
+
+/*
     <div className="projects" id="projects">
       <h1>Projekty</h1>
       <div className="about-underline"></div>
@@ -86,5 +100,4 @@ export default function Projects() {
         </div>
       </div>
     </div>
-  )
-}
+    */
