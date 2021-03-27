@@ -145,7 +145,7 @@ Projects
   height: 100vh;
 }
 .projects {
-  height: 100vh;
+  height: 100%;
   padding: 20px;
 }
 .projects-description {
@@ -156,6 +156,8 @@ Projects
   position: relative;
 }
 .projects-row {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -171,13 +173,24 @@ Projects
   color: #fff;
   padding: 0.5rem 1.5rem;
   font-weight: 700;
+  transition: all 0.2s ease-in-out;
 }
-.projects-background {
+.projects-button:hover {
+  transform: scale(1.1);
+}
+.projects-backgroundblue {
   inset: -3% 20%;
   position: absolute;
   background-color: rgb(46, 80, 129);
   opacity: 0.2;
   transform: none;
+}
+.projects-backgroundgreen {
+  inset: -20% -15% 15% 10%;
+  background-color: rgb(102, 193, 144);
+  transform: none;
+  position: absolute;
+  opacity: 0.2;
 }
 .projects-github {
   background-color: #8e8f8e;
@@ -186,11 +199,16 @@ Projects
   align-items: center;
   margin-right: space(1);
   padding: space(1);
-  border-radius: 100px;
-  height: rem(40px);
-  width: rem(40px);
+  border-radius: 20px;
+  height: rem(70px);
+  width: rem(70px);
   transform: translateY(3px);
   box-shadow: 0px 4px 12px -2px;
+}
+@media only screen and (max-width: 992px) {
+  .projects-row {
+    display: block;
+  }
 }
 /*
 =============== 

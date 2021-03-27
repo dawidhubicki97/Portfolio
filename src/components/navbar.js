@@ -12,10 +12,8 @@ const Navbar = homeImageData => {
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScroll(true)
-      console.log(window.scrollY)
     } else {
       setScroll(false)
-      console.log(window.scrollY)
     }
   }
 
