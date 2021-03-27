@@ -258,8 +258,16 @@ Contact
   background-color: var(--fifth);
   padding: 10px;
 }
+.contact-emailinfo {
+  font-size: x-large;
+  margin-top: 5px;
+}
+.contact-phoneinfo {
+  font-size: x-large;
+}
 .contact-form {
-  width: 80%;
+  align-items: center;
+  width: 50%;
 }
 .contact-name {
   margin-bottom: 10px;
@@ -268,23 +276,26 @@ Contact
   margin-bottom: 10px;
 }
 .contact-info {
+  padding-left: 10%;
+  width: 30%;
   float: left;
 }
 .form-input {
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   color: #333;
   font-size: 1.2rem;
-  margin: 0 auto;
   padding: 0.5rem 2rem;
   border-radius: 0.2rem;
   background-color: var(--secondary);
   border: none;
-  width: 30%;
+  width: 50%;
   display: block;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
 }
 .share-button {
+  margin: 8px auto 0 auto;
   border-style: none;
   width: 280px;
   height: 80px;
