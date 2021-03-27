@@ -192,18 +192,23 @@ Projects
   position: absolute;
   opacity: 0.2;
 }
+.projects-github:hover {
+  transform: scale(1.1);
+}
 .projects-github {
-  background-color: #8e8f8e;
+  margin-left: 10px;
+  background-color: #a1a7a1;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-right: space(1);
   padding: space(1);
   border-radius: 20px;
-  height: rem(70px);
-  width: rem(70px);
+  height: 40px;
+  width: 40px;
   transform: translateY(3px);
   box-shadow: 0px 4px 12px -2px;
+  transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 992px) {
   .projects-row {
