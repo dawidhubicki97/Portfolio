@@ -216,6 +216,9 @@ Projects
   .projects-row {
     display: block;
   }
+  .projects-backgroundblue {
+    inset: -50% 25% -35% 20%;
+  }
 }
 /*
 =============== 
