@@ -1,8 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import Img from "gatsby-image"
-import Media from "react-media"
 import { FaGithub } from "react-icons/fa"
-
 export default function Projects(homeImageData) {
   return (
     <div className="projects" id="projects">
@@ -24,7 +22,6 @@ export default function Projects(homeImageData) {
             <FaGithub></FaGithub>
           </button>
         </div>
-
         <div className="projects-images">
           <div className="projects-backgroundblue" data-sal="fade"></div>
           <div
@@ -33,89 +30,28 @@ export default function Projects(homeImageData) {
             data-sal-delay="300"
             data-sal-easing="ease"
           >
-            <Media queries={{ small: { maxWidth: 992 } }}>
-              {matches =>
-                matches.small ? (
-                  <>
-                    <Img
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        marginTop: "30px",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    />
-                    <Img
-                      data-sal="slide-right"
-                      data-sal-duration="2000"
-                      data-sal-delay="300"
-                      data-sal-easing="ease"
-                      style={{
-                        height: "50%",
-                        width: "15%",
-                        marginTop: "30px",
-                        border: "1px solid black",
-                        borderRadius: "10px",
-                        zIndex: "3",
-                        position: "absolute",
-                        right: "0",
-                        bottom: "0",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    ></Img>
-                  </>
-                ) : (
-                  <>
-                    <Img
-                      style={{
-                        height: "30vh",
-                        width: "30vw",
-                        marginTop: "30px",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    />
-                    <Img
-                      data-sal="slide-right"
-                      data-sal-duration="2000"
-                      data-sal-delay="300"
-                      data-sal-easing="ease"
-                      style={{
-                        height: "20vh",
-                        width: "20%",
-                        marginTop: "30px",
-                        border: "1px solid black",
-                        borderRadius: "10px",
-                        zIndex: "3",
-                        position: "absolute",
-                        right: "0",
-                        bottom: "0",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    ></Img>
-                  </>
-                )
+            <Img
+              className="projects-bigimagefirst"
+              imgStyle={{ objectFit: "fill" }}
+              fluid={
+                homeImageData.homeImageData.homeImageData.firstProjectImage
+                  .childImageSharp.fluid
               }
-            </Media>
+              alt=""
+            />
+            <Img
+              className="projects-smallimagefirst"
+              data-sal="slide-right"
+              data-sal-duration="2000"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              imgStyle={{ objectFit: "fill" }}
+              fluid={
+                homeImageData.homeImageData.homeImageData.firstProjectImage
+                  .childImageSharp.fluid
+              }
+              alt=""
+            ></Img>
           </div>
         </div>
       </div>
@@ -128,89 +64,28 @@ export default function Projects(homeImageData) {
             data-sal-delay="300"
             data-sal-easing="ease"
           >
-            <Media queries={{ small: { maxWidth: 992 } }}>
-              {matches =>
-                matches.small ? (
-                  <>
-                    <Img
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        marginTop: "30px",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    />
-                    <Img
-                      data-sal="slide-right"
-                      data-sal-duration="2000"
-                      data-sal-delay="300"
-                      data-sal-easing="ease"
-                      style={{
-                        height: "50%",
-                        width: "15%",
-                        marginTop: "30px",
-                        border: "1px solid black",
-                        borderRadius: "10px",
-                        zIndex: "3",
-                        position: "absolute",
-                        right: "0",
-                        bottom: "0",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    ></Img>
-                  </>
-                ) : (
-                  <>
-                    <Img
-                      style={{
-                        height: "30vh",
-                        width: "30vw",
-                        marginTop: "30px",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    />
-                    <Img
-                      data-sal="slide-right"
-                      data-sal-duration="2000"
-                      data-sal-delay="300"
-                      data-sal-easing="ease"
-                      style={{
-                        height: "20vh",
-                        width: "20%",
-                        marginTop: "30px",
-                        border: "1px solid black",
-                        borderRadius: "10px",
-                        zIndex: "3",
-                        position: "absolute",
-                        right: "0",
-                        bottom: "0",
-                      }}
-                      imgStyle={{ objectFit: "fill" }}
-                      fluid={
-                        homeImageData.homeImageData.homeImageData
-                          .firstProjectImage.childImageSharp.fluid
-                      }
-                      alt=""
-                    ></Img>
-                  </>
-                )
+            <Img
+              className="projects-bigimagefirst"
+              imgStyle={{ objectFit: "fill" }}
+              fluid={
+                homeImageData.homeImageData.homeImageData.firstProjectImage
+                  .childImageSharp.fluid
               }
-            </Media>
+              alt=""
+            />
+            <Img
+              className="projects-smallimagefirst"
+              data-sal="slide-right"
+              data-sal-duration="2000"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              imgStyle={{ objectFit: "fill" }}
+              fluid={
+                homeImageData.homeImageData.homeImageData.firstProjectImage
+                  .childImageSharp.fluid
+              }
+              alt=""
+            ></Img>
           </div>
         </div>
         <div
