@@ -6,7 +6,7 @@ export default function Projects(homeImageData) {
     <div className="projects" id="projects">
       <div className="projects-row">
         <div
-          className="projects-description"
+          className="projects-description projects-rightdirection"
           data-sal="slide-left"
           data-sal-duration="2000"
           data-sal-delay="300"
@@ -55,7 +55,24 @@ export default function Projects(homeImageData) {
           </div>
         </div>
       </div>
-      <div className="projects-row">
+      <div className="projects-row projects-leftdirection">
+        <div
+          className="projects-description"
+          data-sal="slide-left"
+          data-sal-duration="2000"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >
+          <h2>Tytuł mojego projektu</h2>
+          Treść projektu. Opis projektu Treść projektu. Opis projektu Treść
+          projektu. Opis projektu Treść projektu. Opis projektu Treść projektu.
+          Opis projektu Treść projektu. Opis projektu
+          <br></br>
+          <button className="projects-button">Live</button>
+          <button className="projects-github">
+            <FaGithub></FaGithub>
+          </button>
+        </div>
         <div className="projects-images">
           <div className="projects-backgroundgreen" data-sal="fade"></div>
           <div
@@ -87,23 +104,6 @@ export default function Projects(homeImageData) {
               alt=""
             ></Img>
           </div>
-        </div>
-        <div
-          className="projects-description"
-          data-sal="slide-left"
-          data-sal-duration="2000"
-          data-sal-delay="300"
-          data-sal-easing="ease"
-        >
-          <h2>Tytuł mojego projektu</h2>
-          Treść projektu. Opis projektu Treść projektu. Opis projektu Treść
-          projektu. Opis projektu Treść projektu. Opis projektu Treść projektu.
-          Opis projektu Treść projektu. Opis projektu
-          <br></br>
-          <button className="projects-button">Live</button>
-          <button className="projects-github">
-            <FaGithub></FaGithub>
-          </button>
         </div>
       </div>
     </div>
