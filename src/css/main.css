@@ -235,6 +235,12 @@ Projects
 }
 
 @media only screen and (max-width: 992px) {
+  .projects-resizedblue {
+    margin-bottom: 30% !important;
+  }
+  .projects-resizedgreen {
+    margin-bottom: 20% !important;
+  }
   .projects-row {
     display: block;
   }

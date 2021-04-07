@@ -4,9 +4,9 @@ import { FaGithub } from "react-icons/fa"
 export default function Projects(homeImageData) {
   return (
     <div className="projects" id="projects">
-      <div className="projects-row">
+      <div className="projects-row  projects-rightdirection">
         <div
-          className="projects-description projects-rightdirection"
+          className="projects-description projects-resizedblue"
           data-sal="slide-left"
           data-sal-duration="2000"
           data-sal-delay="300"
@@ -57,7 +57,7 @@ export default function Projects(homeImageData) {
       </div>
       <div className="projects-row projects-leftdirection">
         <div
-          className="projects-description"
+          className="projects-description projects-resizedgreen"
           data-sal="slide-left"
           data-sal-duration="2000"
           data-sal-delay="300"
