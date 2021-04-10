@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { FaBars, Fatimes, FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import Img from "gatsby-image"
@@ -17,21 +17,36 @@ const Navbar = homeImageData => {
     }
   }
 
+  const menuRef = useRef()
+  useEffect(() => {
+    document.addEventListener("mousedown", event => {
+      if (!menuRef.current.contains(event.target)) {
+        setClick(false)
+      }
+    })
+  }, [])
+  const showMenu = () => {
+    setClick(!click)
+  }
   useEffect(() => {
     changeNav()
     window.addEventListener("scroll", changeNav)
   }, [])
 
   return (
-    <nav className={scroll ? "navbar active" : "navbar"}>
+    <nav className={scroll ? "navbar active" : "navbar"} ref={menuRef}>
       <div className="nav-center">
         <div className="nav-header">
           <h3>Portfolio</h3>
-          <button type="button" className="toggle-btn">
+          <button type="button" className="toggle-btn" onClick={showMenu}>
             <FaAlignRight></FaAlignRight>
           </button>
         </div>
-        <PageLinks styleClass="nav-links"></PageLinks>
+        {click ? (
+          <PageLinks styleClass="nav-links nav-display"></PageLinks>
+        ) : (
+          <PageLinks styleClass="nav-links"></PageLinks>
+        )}
       </div>
     </nav>
   )
