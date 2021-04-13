@@ -91,6 +91,9 @@ Navbar
   .navbar {
     padding-top: 0;
   }
+  .nav-header {
+    width: 90vw;
+  }
   .nav-display {
     display: block !important;
     transition: 0.5s;
@@ -157,6 +160,7 @@ Home
 .home-title {
   font-weight: bold;
   font-size: 46px;
+  line-height: 50px;
 }
 .home-description {
   font-weight: lighter;
@@ -253,8 +257,8 @@ Projects
   border-radius: 10px;
   z-index: 3;
   position: absolute !important;
-  right: 0;
   bottom: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -264,6 +268,10 @@ Projects
   .projects-resizedgreen {
     margin-bottom: 20% !important;
   }
+  .projects-backgroundgreen {
+    inset: -20% 5% 15% 20%;
+  }
+
   .projects-row {
     display: block;
   }
@@ -271,8 +279,9 @@ Projects
     inset: -50% 25% -35% 20%;
   }
   .projects-bigimagefirst {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 30px;
   }
 
@@ -286,6 +295,7 @@ Projects
   .projects-smallimagefirst {
     height: 50%;
     width: 15%;
+    right: 10%;
   }
 }
 /*
@@ -309,7 +319,7 @@ About
 }
 .about-box {
   color: var(--third);
-  background-color: var(--sixth);
+  background-color: var(--secondary);
   height: 80%;
   width: 25%;
   border-radius: 2%;
@@ -327,6 +337,7 @@ About
 @media only screen and (max-width: 768px) {
   .about {
     height: 100%;
+    padding: 10px;
   }
   .about-container {
     display: block;

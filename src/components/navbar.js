@@ -37,7 +37,6 @@ const Navbar = homeImageData => {
     <nav className={scroll ? "navbar active" : "navbar"} ref={menuRef}>
       <div className="nav-center">
         <div className="nav-header">
-          <h3>Portfolio</h3>
           <button type="button" className="toggle-btn" onClick={showMenu}>
             <FaAlignRight></FaAlignRight>
           </button>
