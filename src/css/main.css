@@ -83,7 +83,6 @@ Navbar
   width: 0%;
   height: 3px;
   background-color: var(--third);
-  transition: width 0.4s ease-out;
 }
 .nav-link:hover.nav-link::after {
   width: 100%;
@@ -94,13 +93,19 @@ Navbar
   }
   .nav-display {
     display: block !important;
+    transition: 0.5s;
   }
   .nav-links {
+    padding: 25px;
     display: none;
     position: fixed;
-    width: 70%;
+    width: 50%;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: #ffccbc;
+    z-index: 999;
+  }
+  .nav-link {
+    margin-top: 30px;
   }
   .nav-center {
     margin-left: 0;
@@ -109,7 +114,8 @@ Navbar
     margin-left: 0;
   }
   .toggle-btn {
-    display: grid;
+    display: block;
+    float: right;
   }
 }
 
@@ -411,7 +417,7 @@ Contact
   color: var(--primary);
   text-align: center;
   line-height: 80px;
-  z-index: 999;
+  z-index: 99;
   transition: 0.6s linear;
   border-radius: 40px;
 }
@@ -461,77 +467,3 @@ Contact
     margin: 0 auto;
   }
 }
-
-/*
-.projects-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-.card-container {
-  background-color: var(--sixth);
-  border-radius: 5px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-  color: var(--fourth);
-  padding-top: 30px;
-  position: relative;
-  width: 350px;
-  max-width: 100%;
-  text-align: center;
-}
-
-.card-container .pro {
-  color: var(--primary);
-  background-color: var(--fourth);
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 7px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
-.card-container .round {
-  border: 1px solid var(--fourth);
-  border-radius: 50%;
-  padding: 7px;
-}
-
-button.primary {
-  background-color: var(--fourth);
-  border: 1px solid var(--fourth);
-  border-radius: 3px;
-  color: #231e39;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 10px 25px;
-}
-
-button.primary.ghost {
-  background-color: transparent;
-  color: var(--fourth);
-}
-
-.card-skills {
-  background-color: var(--seventh);
-  text-align: left;
-  padding: 15px;
-  margin-top: 30px;
-}
-
-.card-skills ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-skills ul li {
-  border: 1px solid #2d2747;
-  border-radius: 2px;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0 7px 7px 0;
-  padding: 7px;
-}
-*/
