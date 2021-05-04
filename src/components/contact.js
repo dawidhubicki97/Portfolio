@@ -41,9 +41,7 @@ export default function Contact() {
               placeholder="Wiadomość"
             ></textarea>
           </div>
-          <button className="share-button">
-            <span>Wyślij</span>
-          </button>
+          <button className="share-button">Wyślij</button>
         </form>
       </div>
     </div>

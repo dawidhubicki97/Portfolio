@@ -12,15 +12,22 @@ export default function Projects(homeImageData) {
           data-sal-delay="300"
           data-sal-easing="ease"
         >
-          <h2>Tytuł mojego projektu</h2>
-          Treść projektu. Opis projektu Treść projektu. Opis projektu Treść
-          projektu. Opis projektu Treść projektu. Opis projektu Treść projektu.
-          Opis projektu Treść projektu. Opis projektu
+          <h2>Social Media</h2>
+          Aplikacja społecznościowa. Pozwala na dzielenie i komentowanie zdjęć
+          swoich znajomych. Została stworzona z pomocą frameworka ReactJS oraz
+          bazy danych firebase.
           <br></br>
-          <button className="projects-button">Live</button>
-          <button className="projects-github">
-            <FaGithub></FaGithub>
-          </button>
+          <a href="https://socialmediaappdh.netlify.app" target="_parent">
+            <button className="projects-button">Live</button>
+          </a>
+          <a
+            href="https://github.com/dawidhubicki97/SocialMediaReact"
+            target="_parent"
+          >
+            <button className="projects-github">
+              <FaGithub></FaGithub>
+            </button>
+          </a>
         </div>
         <div className="projects-images">
           <div className="projects-backgroundblue" data-sal="fade"></div>
@@ -63,10 +70,10 @@ export default function Projects(homeImageData) {
           data-sal-delay="300"
           data-sal-easing="ease"
         >
-          <h2>Tytuł mojego projektu</h2>
-          Treść projektu. Opis projektu Treść projektu. Opis projektu Treść
-          projektu. Opis projektu Treść projektu. Opis projektu Treść projektu.
-          Opis projektu Treść projektu. Opis projektu
+          <h2>Social Media</h2>
+          Aplikacja społecznościowa. Pozwala na dzielenie i komentowanie zdjęć
+          swoich znajomych. Została stworzona z pomocą frameworka ReactJS oraz
+          bazy danych firebase.
           <br></br>
           <button className="projects-button">Live</button>
           <button className="projects-github">
