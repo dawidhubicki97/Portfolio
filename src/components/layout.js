@@ -14,14 +14,7 @@ const Layout = (homeImageData, { children }) => {
     <>
       <div className="header">
         <Navbar></Navbar>
-        <Img
-          style={{ height: "100%", width: "100vw" }}
-          imgStyle={{ objectFit: "fill" }}
-          fluid={
-            homeImageData.homeImageData.backgroundImage.childImageSharp.fluid
-          }
-          alt=""
-        />
+
         <Home></Home>
       </div>
       <About></About>

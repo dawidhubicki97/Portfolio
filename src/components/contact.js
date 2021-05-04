@@ -43,8 +43,6 @@ export default function Contact() {
           </div>
           <button className="share-button">
             <span>Wyślij</span>
-            <p>Wyślij</p>
-            <p>Wiadomość</p>
           </button>
         </form>
       </div>
