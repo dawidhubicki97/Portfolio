@@ -6,10 +6,10 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className="contact-info">
         <div className="contact-phoneinfo">
-          <FaPhone></FaPhone> 111222333
+          <FaPhone></FaPhone> 517066407
         </div>
         <div className="contact-emailinfo">
-          <FaEnvelope></FaEnvelope> dawid@gmail.com
+          <FaEnvelope></FaEnvelope> daw8hub@gmail.com
         </div>
       </div>
       <div className="contact-form">

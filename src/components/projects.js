@@ -54,8 +54,8 @@ export default function Projects(homeImageData) {
               data-sal-easing="ease"
               imgStyle={{ objectFit: "fill" }}
               fluid={
-                homeImageData.homeImageData.homeImageData.firstProjectImage
-                  .childImageSharp.fluid
+                homeImageData.homeImageData.homeImageData
+                  .firstProjectImageMobile.childImageSharp.fluid
               }
               alt=""
             ></Img>
@@ -70,10 +70,10 @@ export default function Projects(homeImageData) {
           data-sal-delay="300"
           data-sal-easing="ease"
         >
-          <h2>Social Media</h2>
-          Aplikacja społecznościowa. Pozwala na dzielenie i komentowanie zdjęć
-          swoich znajomych. Została stworzona z pomocą frameworka ReactJS oraz
-          bazy danych firebase.
+          <h2>Aplikacja firmy taksówkarskiej</h2>
+          Aplikacja Mobilna która służy do zamawiania kursów pasażerskich.
+          Wykorzystuje takie narzędzia jak Google API, Firebase oraz
+          geolokalizację. Napisana w języku Kotlin.
           <br></br>
           <button className="projects-button">Live</button>
           <button className="projects-github">
@@ -92,7 +92,7 @@ export default function Projects(homeImageData) {
               className="projects-bigimagefirst"
               imgStyle={{ objectFit: "fill" }}
               fluid={
-                homeImageData.homeImageData.homeImageData.firstProjectImage
+                homeImageData.homeImageData.homeImageData.secondProjectImage
                   .childImageSharp.fluid
               }
               alt=""
@@ -105,8 +105,8 @@ export default function Projects(homeImageData) {
               data-sal-easing="ease"
               imgStyle={{ objectFit: "fill" }}
               fluid={
-                homeImageData.homeImageData.homeImageData.firstProjectImage
-                  .childImageSharp.fluid
+                homeImageData.homeImageData.homeImageData
+                  .secondProjectImageMobile.childImageSharp.fluid
               }
               alt=""
             ></Img>
@@ -116,90 +116,3 @@ export default function Projects(homeImageData) {
     </div>
   )
 }
-
-/*
-    <div className="projects" id="projects">
-      <h1>Projekty</h1>
-      <div className="about-underline"></div>
-      <div className="projects-container">
-        <div class="card-container">
-          <span class="pro">PROJECT</span>
-          <img
-            class="round"
-            src="https://randomuser.me/api/portraits/women/79.jpg"
-            alt="user"
-          />
-          <h3>Social App</h3>
-          <h6>WebApp</h6>
-          <p>Portal społecznościowy stworzony w ReactJs</p>
-          <div className="buttons">
-            <button className="primary">Live</button>
-            <button className="primary ghost">Github</button>
-          </div>
-          <div className="card-skills">
-            <h6>Technologie</h6>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>Firebase</li>
-            </ul>
-          </div>
-        </div>
-        <div className="card-container">
-          <span className="pro">PROJECT</span>
-          <img
-            className="round"
-            src="https://randomuser.me/api/portraits/women/79.jpg"
-            alt="user"
-          />
-          <h3>Social App</h3>
-          <h6>WebApp</h6>
-          <p>Portal społecznościowy stworzony w ReactJs</p>
-          <div cclassNamelass="buttons">
-            <button className="primary">Live</button>
-            <button className="primary ghost">Github</button>
-          </div>
-          <div className="card-skills">
-            <h6>Technologie</h6>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>Firebase</li>
-            </ul>
-          </div>
-        </div>
-        <div className="card-container">
-          <span className="pro">PROJECT</span>
-          <img
-            className="round"
-            src="https://randomuser.me/api/portraits/women/79.jpg"
-            alt="user"
-          />
-          <h3>Social App</h3>
-          <h6>WebApp</h6>
-          <p>Portal społecznościowy stworzony w ReactJs</p>
-          <div className="buttons">
-            <button className="primary">Live</button>
-            <button className="primary ghost">Github</button>
-          </div>
-          <div className="card-skills">
-            <h6>Technologie</h6>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>Firebase</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    */

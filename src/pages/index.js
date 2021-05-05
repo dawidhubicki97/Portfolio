@@ -24,7 +24,32 @@ export const query = graphql`
         }
       }
     }
-    firstProjectImage: file(relativePath: { eq: "projektonepc.jpg" }) {
+    firstProjectImage: file(relativePath: { eq: "socialapp.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    firstProjectImageMobile: file(
+      relativePath: { eq: "socialmediappmobile.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    secondProjectImage: file(relativePath: { eq: "drugiprojekt.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    secondProjectImageMobile: file(
+      relativePath: { eq: "drugiprojektmobile.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
