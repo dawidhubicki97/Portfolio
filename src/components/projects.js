@@ -75,10 +75,11 @@ export default function Projects(homeImageData) {
           Wykorzystuje takie narzędzia jak Google API, Firebase oraz
           geolokalizację. Napisana w języku Kotlin.
           <br></br>
-          <button className="projects-button">Live</button>
-          <button className="projects-github">
-            <FaGithub></FaGithub>
-          </button>
+          <a href="https://github.com/dawidhubicki97/Taxi-App" target="_parent">
+            <button className="projects-github">
+              <FaGithub></FaGithub>
+            </button>
+          </a>
         </div>
         <div className="projects-images">
           <div className="projects-backgroundgreen" data-sal="fade"></div>
