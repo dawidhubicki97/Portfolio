@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Img from "gatsby-image"
 import "./layout.css"
-import Navbar from "./Navbar"
+import Navbar from "./navbar"
 import About from "./about"
 import Home from "./home"
 import Projects from "./projects"
