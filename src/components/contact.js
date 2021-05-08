@@ -14,7 +14,16 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState }),
     })
-      .then(() => alert("Success!"))
+      .then(
+        () => alert("Wiadomość została wysłana!"),
+        setFormState({
+          ...formState,
+          name: "",
+          email: "",
+          message: "",
+        })
+      )
+
       .catch(error => alert(error))
 
     e.preventDefault()
@@ -64,6 +73,7 @@ export default function Contact() {
           <div className="contact-email">
             <input
               name="email"
+              type="email"
               className="form-input"
               placeholder="email@email.com"
               onChange={handleChange}
