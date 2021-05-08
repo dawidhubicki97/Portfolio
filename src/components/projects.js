@@ -37,28 +37,32 @@ export default function Projects(homeImageData) {
             data-sal-delay="300"
             data-sal-easing="ease"
           >
-            <Img
-              className="projects-bigimagefirst"
-              imgStyle={{ objectFit: "fill" }}
-              fluid={
-                homeImageData.homeImageData.homeImageData.firstProjectImage
-                  .childImageSharp.fluid
-              }
-              alt=""
-            />
-            <Img
-              className="projects-smallimagefirst"
-              data-sal="slide-right"
-              data-sal-duration="2000"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-              imgStyle={{ objectFit: "fill" }}
-              fluid={
-                homeImageData.homeImageData.homeImageData
-                  .firstProjectImageMobile.childImageSharp.fluid
-              }
-              alt=""
-            ></Img>
+            {homeImageData.homeImageData.homeImageData && (
+              <Img
+                className="projects-bigimagefirst"
+                imgStyle={{ objectFit: "fill" }}
+                fluid={
+                  homeImageData.homeImageData.homeImageData.firstProjectImage
+                    .childImageSharp.fluid
+                }
+                alt=""
+              />
+            )}
+            {homeImageData.homeImageData.homeImageData && (
+              <Img
+                className="projects-smallimagefirst"
+                data-sal="slide-right"
+                data-sal-duration="2000"
+                data-sal-delay="300"
+                data-sal-easing="ease"
+                imgStyle={{ objectFit: "fill" }}
+                fluid={
+                  homeImageData.homeImageData.homeImageData
+                    .firstProjectImageMobile.childImageSharp.fluid
+                }
+                alt=""
+              ></Img>
+            )}
           </div>
         </div>
       </div>
@@ -89,28 +93,32 @@ export default function Projects(homeImageData) {
             data-sal-delay="300"
             data-sal-easing="ease"
           >
-            <Img
-              className="projects-bigimagefirst"
-              imgStyle={{ objectFit: "fill" }}
-              fluid={
-                homeImageData.homeImageData.homeImageData.secondProjectImage
-                  .childImageSharp.fluid
-              }
-              alt=""
-            />
-            <Img
-              className="projects-smallimagefirst"
-              data-sal="slide-right"
-              data-sal-duration="2000"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-              imgStyle={{ objectFit: "fill" }}
-              fluid={
-                homeImageData.homeImageData.homeImageData
-                  .secondProjectImageMobile.childImageSharp.fluid
-              }
-              alt=""
-            ></Img>
+            {homeImageData.homeImageData.homeImageData && (
+              <Img
+                className="projects-bigimagefirst"
+                imgStyle={{ objectFit: "fill" }}
+                fluid={
+                  homeImageData.homeImageData.homeImageData.secondProjectImage
+                    .childImageSharp.fluid
+                }
+                alt=""
+              />
+            )}
+            {homeImageData.homeImageData.homeImageData && (
+              <Img
+                className="projects-smallimagefirst"
+                data-sal="slide-right"
+                data-sal-duration="2000"
+                data-sal-delay="300"
+                data-sal-easing="ease"
+                imgStyle={{ objectFit: "fill" }}
+                fluid={
+                  homeImageData.homeImageData.homeImageData
+                    .secondProjectImageMobile.childImageSharp.fluid
+                }
+                alt=""
+              ></Img>
+            )}
           </div>
         </div>
       </div>
